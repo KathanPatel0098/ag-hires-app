@@ -1,0 +1,252 @@
+.screening-container {
+  @apply min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8;
+}
+
+.screening-content {
+  @apply max-w-7xl mx-auto;
+}
+
+.screening-header {
+  @apply mb-8;
+}
+
+.screening-title {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.screening-subtitle {
+  @apply mt-2 text-sm text-gray-600;
+}
+
+.screening-grid {
+  @apply grid grid-cols-1 gap-6 lg:grid-cols-2;
+}
+
+.applications-list {
+  @apply bg-white shadow rounded-lg p-6;
+}
+
+.applications-title {
+  @apply text-lg font-medium text-gray-900 mb-4;
+}
+
+.application-item {
+  @apply border-b border-gray-200 py-4 last:border-b-0 cursor-pointer hover:bg-gray-50;
+}
+
+.application-item.selected {
+  @apply bg-indigo-50;
+}
+
+.application-header {
+  @apply flex justify-between items-start mb-2;
+}
+
+.applicant-name {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.applicant-email {
+  @apply text-sm text-gray-500;
+}
+
+.application-status {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-approved {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-800;
+}
+
+.application-details {
+  @apply mt-4;
+}
+
+.details-grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.detail-item {
+  @apply text-sm;
+}
+
+.detail-label {
+  @apply font-medium text-gray-500;
+}
+
+.detail-value {
+  @apply text-gray-900;
+}
+
+.screening-actions {
+  @apply mt-4 flex space-x-3;
+}
+
+.action-button {
+  @apply inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.approve-button {
+  @apply bg-green-600 hover:bg-green-700 focus:ring-green-500;
+}
+
+.reject-button {
+  @apply bg-red-600 hover:bg-red-700 focus:ring-red-500;
+}
+
+.screening-notes {
+  @apply mt-4;
+}
+
+.notes-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.notes-textarea {
+  @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
+}
+
+.save-notes-button {
+  @apply mt-2 inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.loading-spinner {
+  @apply flex flex-col items-center justify-center;
+}
+
+.spinner {
+  @apply animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600;
+}
+
+.error-container {
+  @apply bg-red-50 border border-red-200 rounded-md p-4;
+}
+
+.error-icon {
+  @apply h-5 w-5 text-red-400;
+}
+
+.error-message {
+  @apply mt-2 text-sm text-red-700;
+}
+
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500;
+}
+
+/* New classes for the screening layout */
+.job-list {
+  @apply space-y-2;
+}
+
+.job-item {
+  @apply w-full text-left p-4 rounded-lg border border-gray-200 hover:border-indigo-500 transition-colors duration-200;
+}
+
+.job-item.selected {
+  @apply border-indigo-500 bg-indigo-50;
+}
+
+.job-title {
+  @apply text-lg font-medium text-gray-900;
+}
+
+.job-company {
+  @apply text-sm text-gray-500;
+}
+
+.applications-container {
+  @apply bg-white shadow rounded-lg p-6;
+}
+
+.applications-grid {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.application-card {
+  @apply p-4 border border-gray-200 rounded-lg cursor-pointer hover:border-indigo-500 transition-colors duration-200;
+}
+
+.application-card.selected {
+  @apply border-indigo-500 bg-indigo-50;
+}
+
+.candidate-name {
+  @apply text-lg font-medium text-gray-900;
+}
+
+.status-badge {
+  @apply px-2 py-1 text-xs font-medium rounded-full;
+}
+
+.status-badge.pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-badge.approved {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-badge.rejected {
+  @apply bg-red-100 text-red-800;
+}
+
+.empty-state {
+  @apply text-center py-12;
+}
+
+.empty-state-icon {
+  @apply mx-auto h-12 w-12 text-gray-400;
+}
+
+.empty-state-text {
+  @apply mt-2 text-sm text-gray-500;
+}
+
+.candidate-info {
+  @apply bg-white shadow rounded-lg p-6;
+}
+
+.info-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-6;
+}
+
+.info-item {
+  @apply space-y-1;
+}
+
+.info-item label {
+  @apply block text-sm font-medium text-gray-500;
+}
+
+.info-item p {
+  @apply text-sm text-gray-900;
+}
+
+.form-group {
+  @apply space-y-1;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.form-select {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+}
+
+.form-textarea {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+} 
